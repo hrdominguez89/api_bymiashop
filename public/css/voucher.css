@@ -1,0 +1,329 @@
+body {
+    height: 100%;
+    font-family: "Roboto", "sans-serif";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    background: #fff;
+    color: #3d464d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow-y: scroll;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+
+.block {
+    margin-bottom: 50px;
+}
+
+.order-success__body {
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.order-success__header {
+    padding: 60px 0 52px;
+    text-align: center;
+}
+
+.order-success__meta {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.card {
+    border: 2px solid #f0f0f0;
+    border-radius: 2px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+
+.ml-n2, .mx-n2 {
+    margin-left: -0.5rem !important;
+}
+
+.mr-n2, .mx-n2 {
+    margin-right: -0.5rem !important;
+}
+
+.mt-3, .my-3 {
+    margin-top: 1rem !important;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.card {
+    border: 2px solid #f0f0f0;
+    border-radius: 2px;
+}
+
+.order-success__title {
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+.order-success__actions {
+    margin-top: 20px;
+}
+
+.order-success__meta {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.order-success__meta-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dashed {
+    border-right: 2px dashed #ebebeb;
+}
+
+.order-list table {
+    width: 100%;
+    font-size: 15px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.order-list table {
+    width: 100%;
+    font-size: 15px;
+}
+
+.order-list th:first-child, .order-list td:first-child {
+    padding-left: 1.5rem;
+}
+
+.order-list__header th, .order-list__header td {
+    border-bottom: 2px solid #f0f0f0;
+    padding: 10px 12px;
+}
+
+.order-list__header th, .order-list__header td {
+    text-transform: uppercase;
+    color: #6c757d;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+th {
+    text-align: inherit;
+    text-align: -webkit-match-parent;
+}
+
+.order-list__column-total {
+    text-align: right;
+}
+
+.order-list__column-label{
+    text-align: left;
+}
+
+.order-list__column-quantity {
+    text-align: center;
+}
+
+.order-list__products tr:last-child th, .order-list__products tr:last-child td {
+    padding-bottom: 14px;
+}
+
+.order-list__products tr:first-child td {
+    padding-top: 14px;
+}
+
+.order-list th, .order-list td {
+    padding: 4px 12px;
+}
+
+.order-list__column-image {
+    width: 1px;
+}
+
+.order-list__products .order-list__column-product {
+    padding-left: 4px;
+}
+
+.order-list a {
+    color: inherit;
+}
+
+.order-list__footer {
+    font-size: 20px;
+}
+
+.order-list th:first-child, .order-list td:first-child {
+    padding-left: 1.5rem;
+}
+
+.order-list__footer th, .order-list__footer td {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.order-list th, .order-list td {
+    padding: 4px 12px;
+}
+
+.order-list__footer th {
+    font-weight: 500;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.col-sm-6 {
+    flex: 0 0 50%;
+}
+
+.pl-2, .px-2 {
+    padding-left: 0.5rem !important;
+}
+
+.pr-2, .px-2 {
+    padding-right: 0.5rem !important;
+}
+
+.address-card {
+    position: relative;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 2px solid #f0f0f0;
+    border-radius: 2px;
+}
+
+.address-card__body {
+    padding: 1.5rem;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.address-card__badge {
+    right: 0.75rem;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.address-card__badge--muted {
+    background-color: #f0f0f0;
+    color: #3d464d;
+}
+
+.address-card__badge {
+    position: absolute;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 4px 8px 2px;
+    top: -2px;
+}
+
+.address-card__name {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 1.125rem;
+}
+
+.address-card__body {
+    padding: 1.5rem;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.address-card__row-title {
+    font-size: 12px;
+    color: #999;
+}
+
+.address-card__row {
+    margin-top: 0.75rem;
+}
+
+.order-list__header th, .order-list__header td {
+    border-bottom: 2px solid #f0f0f0;
+    padding: 10px 12px;
+}
+
+.order-success__meta-title {
+    display: block;
+    font-size: 13px;
+    color: #6c757d;
+    margin-bottom: 4px;
+}
+
+.order-success__meta-value {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.order-success__subtitle {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+svg {
+    display: block;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.order-list__products tr td {
+    padding-bottom: 14px;
+    padding-top: 14px;
+}
+

@@ -1,0 +1,45 @@
+security:
+    role_hierarchy:
+        ROLE_SUPER_ADMINISTRATOR: [ ROLE_CUSTOMER, ROLE_ALLOWED_TO_SWITCH ]
+    # https://symfony.com/doc/current/security/authenticator_manager.html
+    enable_authenticator_manager: false
+    # https://symfony.com/doc/current/security.html#c-hashing-passwords
+    password_hashers:
+        Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
+        App\Entity\User: 'bcrypt'
+        App\Entity\Customer: 'bcrypt'
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    providers:
+        users:
+            entity:
+                # the class of the entity that represents users
+                class: 'App\Entity\Customer'
+                # the property to query by - e.g. username, email, etc
+                property: 'email'
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        api_login:
+            pattern: ^/api/v1/security/login
+            anonymous: lazy
+            provider: users
+            json_login:
+                check_path: app_security_login
+
+        wsse_secured:
+            pattern: ^/api/v1/secure/
+            provider: users
+            stateless: true
+            wsse: true
+
+        main:
+            anonymous: true
+            lazy: true
+
+    # Easy way to control access for large sections of your site
+    # Note: Only the *first* access control that matches will be used
+    access_control:
+        - { path: ^/api/v1/secure/, roles: ROLE_CUSTOMER }
+        - { path: ^/api/v1/*, roles: IS_AUTHENTICATED_ANONYMOUSLY }
